@@ -113,3 +113,6 @@ html, body {
     font-size: 3rem;
     margin-bottom: 1.5rem;
 }
+.loginContent{
+    padding: 10rem;
+}
