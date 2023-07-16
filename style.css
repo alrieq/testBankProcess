@@ -114,5 +114,5 @@ html, body {
     margin-bottom: 1.5rem;
 }
 .loginContent{
-    padding: 10rem;
+    padding: max(10rem, 60px);
 }
