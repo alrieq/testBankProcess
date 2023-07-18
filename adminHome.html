@@ -2,272 +2,328 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Home</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-..." crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row justify-content-center border ">
-            <div class="col col-lg-3 p-3 border-end shadow p-3 ">
-                <h3 class="m-1 text-muted fs-4">Course Manager</h3>
-            </div>
-            <div class="col col-lg-4 p-3 border-end shadow p-3 ">
-                <div class="input-group m-3">
-                    <div class="form-outline">
-                        <input type="search" id="form1" class="form-control pr-5 pt-2" placeholder="Search" />
-                    </div>
-                    <button type="button" class="btn btn-primary">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </div>
-            <div class="col col-lg-5 border-end shadow p-3 ">
-
-
-            </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center border ">
+      <div class="col col-lg-3 p-3 border-end shadow p-3 ">
+        <h3 class="m-1 text-muted fs-4">Course Manager</h3>
+      </div>
+      <div class="col col-lg-4 p-3 border-end shadow p-3 ">
+        <div class="input-group m-3">
+          <div class="form-outline">
+            <input type="search" id="form1" class="form-control pr-5 pt-2" placeholder="Search" />
+          </div>
+          <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+          </button>
         </div>
-        <div class="row justify-content-center border-end shadow flex-grow-1">
-            <div class="col col-lg-3 p-3 border-end shadow p-3">
+      </div>
+      <div class="col col-lg-5 border-end shadow p-3 ">
 
-            </div>
-            <div class="col col-lg-4 p-3 border-end shadow p-3">
-                <div class="row p-3 pb-5 border-bottom">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Open this select menu</option>
-                        <option value="1">All tasks</option>
-                        <option value="2">Incomplete</option>
-                        <option value="3">Completed</option>
-                    </select>
-                </div>
-                <div class="row tasks border-bottom shadow">
-                    <div class="col">
-                        <div class="row p-3 border-bottom shadow " style="background-color: #F1F2F7;">
-                            <div class="col">
-                                <i class="fa-regular fa-circle-check fa-2x"></i>
-                            </div>
-                            <div class="col">
-                                <h6>CPIT-405</h6>
-                            </div>
-                            <div class="col">
-                                <h6>Khalid Alahmadi</h6>
-                            </div>
-                        </div>
-                        <div class="row p-3 border-bottom shadow " style="background-color: #F1F2F7;">
-                            <div class="col">
-                                <i class="fa-regular fa-circle-check fa-2x"></i>
-                            </div>
-                            <div class="col">
-                                <h6>CPIT-405</h6>
-                            </div>
-                            <div class="col">
-                                <h6>Khalid Alahmadi</h6>
-                            </div>
-                        </div>
-                        <div class="row p-3 border-bottom shadow " style="background-color: #F1F2F7;">
-                            <div class="col">
-                                <i class="fa-solid fa-circle-check fa-2x" style="color: #4dc3ff;"></i>
-                            </div>
-                            <div class="col">
-                                <h6>CPIT-405</h6>
-                            </div>
-                            <div class="col">
-                                <h6>Khalid Alahmadi</h6>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pt-3">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Add Task
-                    </button>
-
-                    <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                        aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
-                                </div>
-                                <div class="modal-body">
-                                    <div class="card text-dark mt-3">
-                                        <div class="card-body">
-                                            <h4>Course objectives:</h4>
-                                            <hr class="mt-0">
-                                
-                                              <div class="row px-3" id="objectives">
-                                                <div class="col-md-4 custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="objective1">
-                                                  <label class="custom-control-label" for="objective1">objectives 1</label>
-                                                </div>
-                                                <div class="col-md-4 custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="objective2">
-                                                  <label class="custom-control-label" for="objective2">objectives 2</label>
-                                                </div>
-                                                <div class="col-md-4 custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="objective3">
-                                                  <label class="custom-control-label" for="objective3">objectives 3</label>
-                                                </div>
-                                                <div class="col-md-4 custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="objective4">
-                                                  <label class="custom-control-label" for="objective4">objectives 4</label>
-                                                </div>
-                                              </div>
-                                        </div>
-                                      </div>
-                                      <div class="card text-dark mt-3">
-                                        <div class="card-body">
-                                            <h4>Topic &amp; Outcomes:</h4>
-                                            <hr class="mt-0">
-                                
-                                            <div class="row">
-                                                <div class="col">
-                                                  <div class="row">
-                                                    <div class="col-12 col-md-6">
-                                
-                                                      <label class="text-info">Topic:</label>
-                                                      <select class="form-control" id="topic" fdprocessedid="g0aiv">
-                                                        <option disabled="" selected=""> Choose</option>
-                                                        <option value="true">HEAD &amp; NECK</option>
-                                                        <option value="true">SPINAL CORD</option>
-                                                      </select>
-                                                    </div>
-                                                  </div>
-                                
-                                                  <hr>
-                                
-                                                  <label class="text-info">Corculum learning outcome:</label>
-                                                  <div class="row px-4" id="no-outcomes">
-                                                    <div class="col text-center text-muted">
-                                                        <span>choose topic first</span>
-                                                    </div>
-                                                  </div>
-                                                  <div class="row px-4" id="outcomes" style="display: nne;">
-                                
-                                                    <div class="col-md-4 custom-control custom-checkbox">
-                                                      <input type="checkbox" class="custom-control-input" id="outcome1">
-                                                      <label class="custom-control-label" for="outcome1">outcome 1</label>
-                                                    </div>
-                                                    <div class="col-md-4 custom-control custom-checkbox">
-                                                      <input type="checkbox" class="custom-control-input" id="outcome2">
-                                                      <label class="custom-control-label" for="outcome2">outcome 2</label>
-                                                    </div>
-                                                    <div class="col-md-4 custom-control custom-checkbox">
-                                                      <input type="checkbox" class="custom-control-input" id="outcome3">
-                                                      <label class="custom-control-label" for="outcome3">outcome 3</label>
-                                                    </div>
-                                                    <div class="col-md-4 custom-control custom-checkbox">
-                                                      <input type="checkbox" class="custom-control-input" id="outcome4">
-                                                      <label class="custom-control-label" for="outcome4">outcome 4</label>
-                                                    </div>
-                                
-                                                  </div>
-                                
-                                                </div>
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <div class="card text-dark mt-3">
-                                        <div class="card-body">
-                                          
-                                            <h4>The questions:</h4>
-                                            <hr class="mt-0">
-                                
-                                            <div class="row">
-                                                    <div class="col-md-6">
-                                
-                                                      <label class="text-info">No. questions:</label>
-                                                      <input type="number" max="10" min="1" class="form-control" value="" id="questions" fdprocessedid="mfeqmq">
-                                                    </div> 
-                                                    <div class="col-md-6">
-                                                      <span class="text-uppercase m-0 mt-3 text-danger float-right my-auto h5" style="display: none;" id="difficulty-required"><small class="font-italic">required</small> <i class="fas fa-info-circle"></i></span>
-                                                        
-                                                      <label class="text-info">Questions difficulty:</label>
-                                                      <select class="form-control" id="difficulty" fdprocessedid="h5b6dt">
-                                                        <option disabled="" selected="">Choose</option>
-                                                        <option value="true">Very easy</option>
-                                                        <option value="true">Easy</option>
-                                                        <option value="true">Medium</option>
-                                                        <option value="true">Difficult</option>
-                                                        <option value="true">Very difficult</option>
-                                                      </select>
-                                                    </div>                
-                                            </div>
-                                        </div>
-                                      </div>
-                                      <div class="card text-dark mt-3">
-                                        <div class="card-body">
-                                
-                                            <h4>Category:</h4>
-                                            <hr class="mt-0">
-                                
-                                              <div class="row px-3" id="category">
-                                
-                                                <div class="col-md-4 custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="Category1">
-                                                  <label class="custom-control-label" for="Category1">Category 1</label>
-                                                </div>
-                                                <div class="col-md-4 custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="Category2">
-                                                  <label class="custom-control-label" for="Category2">Category 2</label>
-                                                </div>
-                                                <div class="col-md-4 custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="Category3">
-                                                  <label class="custom-control-label" for="Category3">Category 3</label>
-                                                </div>
-                                                <div class="col-md-4 custom-control custom-checkbox">
-                                                  <input type="checkbox" class="custom-control-input" id="Category4">
-                                                  <label class="custom-control-label" for="Category4">Category 4</label>
-                                                </div>
-                                
-                                              </div>
-                                
-                                        </div>
-                                      </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <div class="row mt-3">
-                                        <div class="col">
-                                            <button type="button" class="btn btn-secondary"
-                                        data-bs-dismiss="modal">Close</button>
-                                        </div>
-                        
-                                        <div class="col">
-                                  <button class="btn btn-success btn-block" onclick="addSubtask()" fdprocessedid="ug0xhl">Submit</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <div class="col col-lg-5 border-end shadow p-3">
-
-            </div>
-        </div>
+      </div>
     </div>
+    <div class="row justify-content-center border-end shadow flex-grow-1">
+      <div class="col col-lg-3 p-3 border-end shadow p-3">
+        <div class="card mb-4">
+          <div class="card-body text-center">
+            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar"
+              class="rounded-circle img-fluid" style="width: 150px;">
+            <h5 class="my-3">John Smith</h5>
+            <p class="text-muted mb-1">Full Stack Developer</p>
+            <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+            <div class="d-flex justify-content-center mb-2">
+              <select class="form-select" aria-label="Default select example">
+                <option selected>Select Course</option>
+                <option value="1">CPIT-405</option>
+                <option value="2">CPIT-252</option>
+                <option value="3">CPIT-280</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="card mb-4 mb-lg-0">
+          <div class="card-body p-0">
+            <ul class="list-group list-group-flush rounded-3">
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <div class="col">
+                  <i class="fas fa-clipboard-list"></i> <small>Total tasks:</small> <span class="text-dark"> 40</span>
+                </div>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                <div class="col ">
+                  <i class="fas fa-clipboard-check"></i> <small>Completed tasks:</small> <span class="text-dark">
+                    18</span>
+                </div>
+                <div class="col-4">
+                  <button type="button" class="btn btn-outline-info btn-sm btn-block round float-right"
+                    fdprocessedid="728g78"> Show</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col col-lg-4 p-3 border-end shadow p-3">
+        <div class="row p-3 pb-5 border-bottom">
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">All tasks</option>
+            <option value="2">Incomplete</option>
+            <option value="3">Completed</option>
+          </select>
+        </div>
+        <div class="row tasks border-bottom shadow">
+          <div class="col ">
+            <div class="row p-3 border-bottom shadow" id="test1" style="background-color: #F1F2F7;">
+              <div class="col">
+                <i class="fa-regular fa-circle-check fa-2x"></i>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <h6 class="p-0 m-0">CPIT-405</h6>
+                </div>
+                <div class="row">
+                  <p class="text-muted p-0 m-0 ">HTML</p>
+                </div>
+              </div>
+              <div class="col">
+                <h6>Khalid Alahmadi</h6>
+              </div>
+            </div>
+            <div class="row p-3 border-bottom shadow " style="background-color: #F1F2F7;">
+              <div class="col">
+                <i class="fa-regular fa-circle-check fa-2x"></i>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <h6 class="p-0 m-0">CPIT-405</h6>
+                </div>
+                <div class="row">
+                  <p class="text-muted p-0 m-0 ">CSS</p>
+                </div>
+              </div>
+              <div class="col">
+                <h6>Mohamad Ahmed</h6>
+              </div>
+            </div>
+            <div class="row p-3 border-bottom shadow " style="background-color: #F1F2F7;">
+              <div class="col">
+                <i class="fa-solid fa-circle-check fa-2x" style="color: #4dc3ff;"></i>
+              </div>
+              <div class="col">
+                <div class="row">
+                  <h6 class="p-0 m-0">CPIT-405</h6>
+                </div>
+                <div class="row">
+                  <p class="text-muted p-0 m-0 ">JAVASCRIPT</p>
+                </div>
+              </div>
+              <div class="col">
+                <h6>Amal Bokhari</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row pt-3">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Add Task
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="card text-dark mt-3">
+                    <div class="card-body">
+                      <h4>Course objectives:</h4>
+                      <hr class="mt-0">
+
+                      <div class="row px-3" id="objectives">
+                        <div class="col-md-4 custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="objective1">
+                          <label class="custom-control-label" for="objective1">objectives 1</label>
+                        </div>
+                        <div class="col-md-4 custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="objective2">
+                          <label class="custom-control-label" for="objective2">objectives 2</label>
+                        </div>
+                        <div class="col-md-4 custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="objective3">
+                          <label class="custom-control-label" for="objective3">objectives 3</label>
+                        </div>
+                        <div class="col-md-4 custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="objective4">
+                          <label class="custom-control-label" for="objective4">objectives 4</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-dark mt-3">
+                    <div class="card-body">
+                      <h4>Topic &amp; Outcomes:</h4>
+                      <hr class="mt-0">
+
+                      <div class="row">
+                        <div class="col">
+                          <div class="row">
+                            <div class="col-12 col-md-6">
+
+                              <label class="text-info">Topic:</label>
+                              <select class="form-control" id="topic" fdprocessedid="g0aiv">
+                                <option disabled="" selected=""> Choose</option>
+                                <option value="true">HEAD &amp; NECK</option>
+                                <option value="true">SPINAL CORD</option>
+                              </select>
+                            </div>
+                          </div>
+                          <hr>
+                          <label class="text-info">Corculum learning outcome:</label>
+                          <div class="row px-4" id="no-outcomes">
+                            <div class="col text-center text-muted">
+                              <span>choose topic first</span>
+                            </div>
+                          </div>
+                          <div class="row px-4" id="outcomes" style="display: nne;">
+
+                            <div class="col-md-4 custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="outcome1">
+                              <label class="custom-control-label" for="outcome1">outcome 1</label>
+                            </div>
+                            <div class="col-md-4 custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="outcome2">
+                              <label class="custom-control-label" for="outcome2">outcome 2</label>
+                            </div>
+                            <div class="col-md-4 custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="outcome3">
+                              <label class="custom-control-label" for="outcome3">outcome 3</label>
+                            </div>
+                            <div class="col-md-4 custom-control custom-checkbox">
+                              <input type="checkbox" class="custom-control-input" id="outcome4">
+                              <label class="custom-control-label" for="outcome4">outcome 4</label>
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-dark mt-3">
+                    <div class="card-body">
+
+                      <h4>The questions:</h4>
+                      <hr class="mt-0">
+
+                      <div class="row">
+                        <div class="col-md-6">
+
+                          <label class="text-info">No. questions:</label>
+                          <input type="number" max="10" min="1" class="form-control" value="" id="questions"
+                            fdprocessedid="mfeqmq">
+                        </div>
+                        <div class="col-md-6">
+                          <span class="text-uppercase m-0 mt-3 text-danger float-right my-auto h5"
+                            style="display: none;" id="difficulty-required"><small class="font-italic">required</small>
+                            <i class="fas fa-info-circle"></i></span>
+
+                          <label class="text-info">Questions difficulty:</label>
+                          <select class="form-control" id="difficulty" fdprocessedid="h5b6dt">
+                            <option disabled="" selected="">Choose</option>
+                            <option value="true">Very easy</option>
+                            <option value="true">Easy</option>
+                            <option value="true">Medium</option>
+                            <option value="true">Difficult</option>
+                            <option value="true">Very difficult</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card text-dark mt-3">
+                    <div class="card-body">
+
+                      <h4>Category:</h4>
+                      <hr class="mt-0">
+
+                      <div class="row px-3" id="category">
+
+                        <div class="col-md-4 custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Category1">
+                          <label class="custom-control-label" for="Category1">Category 1</label>
+                        </div>
+                        <div class="col-md-4 custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Category2">
+                          <label class="custom-control-label" for="Category2">Category 2</label>
+                        </div>
+                        <div class="col-md-4 custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Category3">
+                          <label class="custom-control-label" for="Category3">Category 3</label>
+                        </div>
+                        <div class="col-md-4 custom-control custom-checkbox">
+                          <input type="checkbox" class="custom-control-input" id="Category4">
+                          <label class="custom-control-label" for="Category4">Category 4</label>
+                        </div>
+
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <div class="row mt-3">
+                    <div class="col">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+
+                    <div class="col">
+                      <button class="btn btn-success btn-block" onclick="addSubtask()"
+                        fdprocessedid="ug0xhl">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+      <div class="col col-lg-5 border-end shadow p-3">
+        <div class="col-scrollable" id="test2">
+          <!-- Content of the third column -->
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/c057f7c31f.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c057f7c31f.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>

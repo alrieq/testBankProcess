@@ -120,7 +120,19 @@ html, body {
 .tasks{
     height: 30rem; /* Specify the desired height in pixels or any other unit */
   }
-
+.tasks > div > div:hover{
+    cursor: pointer;
+    border: 5px solid #0065f3;
+}
   .mt-3, .my-3 {
     margin-top: 1rem !important;
+}
+.col-scrollable {
+    overflow-y: auto;
+    max-height: calc(100vh - 150px); /* Adjust the height based on your needs */
+  }
+
+p > button{
+    float: right!important ;
+    margin: 5px 5px 0px 0px;
 }
