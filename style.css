@@ -141,3 +141,12 @@ p > button{
     background-color: #f1864f;
     border-color: #f1864f;
 }
+.icon-sm {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    font-size: 22px;
+    display: inline-block;
+    text-align: center; 
+    margin-top: 6px;
+}
